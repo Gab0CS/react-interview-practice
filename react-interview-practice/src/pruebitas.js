@@ -1,5 +1,5 @@
 // 'ABCDDEFGH'
-const getLongestSubString = (str) =>{
+export const getLongestSubString = (str) =>{
     let subStr = '';
     let subArr = [];
     for (let i = 0; i < str.length; i++){
@@ -12,7 +12,6 @@ const getLongestSubString = (str) =>{
             }
     }
     subArr.push(subStr);
-    // return subArr;
     let maxLength = 0;
     let maxSubStr = '';
     for(let i = 0; i < subArr.length; i++){
@@ -23,5 +22,3 @@ const getLongestSubString = (str) =>{
     }
     return maxSubStr;
 }
-
-console.log(getLongestSubString('dvdf'));
